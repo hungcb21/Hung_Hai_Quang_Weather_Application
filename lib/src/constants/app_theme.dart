@@ -12,6 +12,10 @@ class AppFontWeight {
   static const extraBold = FontWeight.w800;
   static const ultraBold = FontWeight.w900;
 }
+class AppFont {
+  static const String fontBasic = "HelveticaNeue";
+  static const String fontLight = "HelveticaNeue Light";
+}
 
 class AppTheme {
   ThemeData lightTheme = ThemeData(
