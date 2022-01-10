@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/src/constants/app_colors.dart';
+import 'package:weather_app/src/constants/app_string.dart';
 import 'package:weather_app/src/screen/location_screen/widget/location_search.dart';
 
 class LocationScreen extends StatelessWidget {
@@ -15,7 +16,7 @@ class LocationScreen extends StatelessWidget {
           backgroundColor: ColorsApp.primaryColor,
           leading: TextButton(
             child: Text(
-              'Done',
+              AppString.done,
               style: _theme.textTheme.bodyText2!.copyWith(color: Colors.blue),
             ),
             onPressed: () {},
@@ -24,7 +25,7 @@ class LocationScreen extends StatelessWidget {
           title: Column(
             children: [
               Text(
-                'Location',
+                AppString.location,
                 style:
                     _theme.textTheme.subtitle1!.copyWith(color: Colors.white70),
               ),
