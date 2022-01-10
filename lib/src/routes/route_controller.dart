@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/src/constants/routes_name.dart';
+import 'package:weather_app/src/screen/location_screen/location_screen.dart';
 import 'package:weather_app/src/screen/main_screen/main_screen.dart';
 import 'package:weather_app/src/screen/not_found_screen/not_found_screen.dart';
 
@@ -10,6 +11,8 @@ class RouteController {
         switch (settings.name) {
           case RouteNames.main:
             return MainScreen();
+          case RouteNames.location:
+            return LocationScreen();
           default:
             return NotFoundScreen();
         }

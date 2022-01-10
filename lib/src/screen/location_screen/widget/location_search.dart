@@ -33,11 +33,10 @@ class LocationSearch extends StatelessWidget {
                       prefixIcon:
                           Icon(Icons.search, color: Colors.grey.shade400),
                       suffixIcon: IconButton(
-                          onPressed: () {
-                          },
+                          onPressed: () => fieldTextEditingController.text = '',
                           icon: Icon(Icons.close, color: Colors.grey.shade400)),
                       border: OutlineInputBorder(borderSide: BorderSide.none),
-                      hintText: 'abc'),
+                      hintText: 'Please Input City Name'),
                   controller: fieldTextEditingController,
                   focusNode: fieldFocusNode,
                   style: Theme.of(context)
