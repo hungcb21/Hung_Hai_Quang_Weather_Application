@@ -1,4 +1,4 @@
-import 'package:weather_app/src/models/city.dart';
+import '../../models/city.dart';
 
 abstract class LocationService {
   LocationService();

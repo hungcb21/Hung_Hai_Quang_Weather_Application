@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:weather_app/src/blocs/location/location_bloc.dart';
-import 'package:weather_app/src/constants/routes_name.dart';
-import 'package:weather_app/src/routes/route_controller.dart';
-import 'package:weather_app/src/services/location/location_impl.dart';
+
+import './blocs/location/location_bloc.dart';
+import './constants/routes_name.dart';
+import './routes/route_controller.dart';
+import './services/location/location_impl.dart';
 
 class MyApp extends StatelessWidget {
   @override

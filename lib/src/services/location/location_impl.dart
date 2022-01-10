@@ -1,8 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:weather_app/src/models/city.dart';
-import 'package:weather_app/src/services/location/location_service.dart';
+
+import '../../models/city.dart';
+import './location_service.dart';
 
 class LocationImpl extends LocationService {
   @override

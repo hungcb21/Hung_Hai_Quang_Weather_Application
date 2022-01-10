@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
-import 'package:weather_app/src/models/city.dart';
+
+import '../../models/city.dart';
 
 abstract class LocationState extends Equatable {
   @override

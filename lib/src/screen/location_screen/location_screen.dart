@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/src/constants/app_colors.dart';
-import 'package:weather_app/src/constants/app_string.dart';
-import 'package:weather_app/src/screen/location_screen/widget/location_search.dart';
+
+import '../../constants/app_colors.dart';
+import '../../constants/app_string.dart';
+import './widget/location_search.dart';
 
 class LocationScreen extends StatelessWidget {
   const LocationScreen({Key? key}) : super(key: key);
@@ -10,14 +11,17 @@ class LocationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final _theme = Theme.of(context);
     return Scaffold(
-        backgroundColor: ColorsApp.primaryColor,
+        backgroundColor: ColorsApp.primaryBackgroundColor,
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: ColorsApp.primaryColor,
+          backgroundColor: ColorsApp.primaryBackgroundColor,
           leading: TextButton(
             child: Text(
               AppString.done,
-              style: _theme.textTheme.bodyText2!.copyWith(color: Colors.blue),
+              style: _theme.textTheme.bodyText2!.copyWith(
+                  fontSize: 17.5,
+                  fontWeight: FontWeight.w300,
+                  color: ColorsApp.leadingTextColor),
             ),
             onPressed: () {},
           ),
@@ -26,13 +30,13 @@ class LocationScreen extends StatelessWidget {
             children: [
               Text(
                 AppString.location,
-                style:
-                    _theme.textTheme.subtitle1!.copyWith(color: Colors.white70),
+                style: _theme.textTheme.bodyText1!
+                    .copyWith(fontSize: 18, color: Colors.white),
               ),
               Text(
                 'Utrecht',
-                style: _theme.textTheme.subtitle2!.copyWith(
-                    color: Colors.white38, fontWeight: FontWeight.w400),
+                style: _theme.textTheme.bodyText1!.copyWith(
+                    color: ColorsApp.secondaryTextColor, fontSize: 18),
               )
             ],
           ),

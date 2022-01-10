@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/src/constants/routes_name.dart';
-import 'package:weather_app/src/screen/location_screen/location_screen.dart';
-import 'package:weather_app/src/screen/main_screen/main_screen.dart';
-import 'package:weather_app/src/screen/not_found_screen/not_found_screen.dart';
-import 'package:weather_app/src/screen/weather_forecast_screen/weather_forecast_screen.dart';
+
+import '../constants/routes_name.dart';
+import '../screen/location_screen/location_screen.dart';
+import '../screen/main_screen/main_screen.dart';
+import '../screen/not_found_screen/not_found_screen.dart';
+import '../screen/weather_forecast_screen/weather_forecast_screen.dart';
 
 class RouteController {
   MaterialPageRoute routePage(RouteSettings settings) {
